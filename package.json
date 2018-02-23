@@ -1,0 +1,45 @@
+{
+  "name": "Vitaliy",
+  "version": "2.0.1",
+  "description": "Vitaliy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vitaliy",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "*",
+    "browserify": "^16.1.0",
+    "del": "*",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "^7.0.1",
+    "gulp-cache": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-css-unit": "^1.2.2",
+    "gulp-imagemin": "*",
+    "gulp-notify": "*",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "*",
+    "gulp-rsync": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "postcss": "^6.0.14",
+    "postcss-pxtorem": "^4.0.1",
+    "pump": "^3.0.0",
+    "vinyl-ftp": "*",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
