@@ -32,6 +32,7 @@
     "gulp-sass": "*",
     "gulp-uglify": "*",
     "gulp-util": "*",
+    "jquery": "^3.3.1",
     "postcss": "^6.0.14",
     "postcss-pxtorem": "^4.0.1",
     "pump": "^3.0.0",

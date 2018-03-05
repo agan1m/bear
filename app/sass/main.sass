@@ -54,6 +54,8 @@ img
 	display: block
 	max-width: 100%
 	height: auto
+.clear
+	clear: both
 
 
 									/* HEADER */
@@ -89,6 +91,8 @@ img
 	font-size: 13px
 	line-height: 13px
 	color: #fff
+	text-transform: uppercase
+	cursor: pointer
 .header__contacts__hours
 	font-size: 13px
 	padding-top: 5px
@@ -200,5 +204,240 @@ img
 				color: #fff
 				
 
+.popular__title
+	text-align: center
+	font-size: 30px
+	text-transform: uppercase
+	font-weight: 400
+.popular__tabs__nav
+	display: flex
+
+	&__link
+		display: block
+		padding: 15px 40px 12px 33px
+		background-color: #f1f1f1
+		font-size: 14px
+		&:hover
+			background-color: $active
+			color: #fff
+		
+.popular__tabs__nav__item:nth-child(2)
+	.popular__tabs__nav__link
+		transform: skew(15deg)
+		margin-left: -8px
+
+.popular__tabs__carousel
+	padding: 50px 100px
+	border: 1px solid #eeeeee
+	border-top: 2px solid $active
+	display: flex
+	justify-content: space-between
+	&__item
+		width: 18%
+		&__name
+			font-size: 13px
+			font-weight: 700
+			color: #1588ce
+		&__price
+			font-size: 30px
+			font-weight: 700
+			span
+				font-size: 18px
+		&__btn
+			width: 100%
+			padding: 13px 40px
+			font-size: 14px
+			font-weight: 700
+.popular__btn
+	text-align: center
+	margin: 0 auto
+	width: 20%
+	&_item
+		font-size: 13px
+		font-weight: 700
+		border: 1px solid #e2e2e2
+		padding: 12px 26px
+		background-color: #fff
+		margin-top: -1px
+		border-top: 0
+		cursor: pointer
+		&:hover
+			background-color: $active
+			color: #fff
+.about
+	position: relative
+	padding-top: 60px
+	padding-bottom: 60px
+
+.about__discr
+	padding: 55px 70px 30px 70px
+	background-color: $accent
+	color: #fff
+	font-weight: 400
+	font-family: 'Helvetica'
+	position: absolute
+	width: 59%
+	top: 85%
+	&__title
+		text-transform: uppercase
+		font-size: 30px
+		font-weight: 200
+		margin-bottom: 25px
+	&__text
+		font-weight: 400
+		line-height: 20px
+		font-size: 14px
+		color: #8e9bb4
+		margin-bottom: 20px
+	&__link
+		color: #fff
+		font-size: 13px
+		font-weight: 400
+.about__img
+	float: right
+
+.sup
+	padding-top: 60px
+	&__title
+		@extend .popular__title
+		margin-bottom: 44px
+.sup__item
+	width: 85%
+	margin: 0 auto
+	&__img
+		margin: 0 auto
+		text-align: center
+		width: 65%
+		margin-bottom: 42px
+	&__text
+		font-size: 14px
+		font-weight: 400
+		line-height: 20px
+		text-align: center
+
+.special
+	border: 15px solid #bdbdbd
+	padding: 73px 53px
+	background-image: url(../img/big-logo.png)
+	background-repeat: no-repeat
+	background-position: 93% 50%
+	&__title
+		font-size: 48px
+		text-transform: uppercase
+		letter-spacing: 1.92px
+	&__text
+		color: #0e111a
+	&__btn
+		padding: 13px 22px
+		font-size: 13px
+		text-transform: none
+		margin-top: 25px
+
+.news
+	margin-top: 60px
+	&__title
+		text-transform: uppercase
+		font-size: 30px
+		font-weight: 400
+		margin-bottom: 54px
+
+.news__item
+	display: flex
+	justify-content: space-between
+	padding: 30px
+	border-bottom: 1px solid #e5e5e5
+	&:hover
+		border: 1px solid $active
+		box-shadow: 0 0 10px #000
+		.news__item__box__name, .news__item__box__link
+			color: $active
+	&__img
+		width: 50%
+		img
+			height: 100%
+	&__box
+		width: 50%
+		font-size: 12px
+		line-height: 15px
+		padding-left: 22px
+		&__date
+			color: #999999
+			line-height: 18px
+		&__name
+			color: $accent
+			font-weight: 700
+		&__text
+			color: #999999
+			margin-top: 15px
+			margin-bottom: 11px
+		&__link
+			color: $accent
+
+.discrip
+	padding-top: 60px
+	padding-bottom: 60px
+	&__title
+		@extend .popular__title
+		margin-bottom: 54px
+.discrip__text
+	font-size: 13px
+	font-weight: 400
+	line-height: 18px
+
+.map
+	height: 378px
+								/* FOOTER */
+
+
+.footer
+	background-color: $accent
+	color: #fff
+	padding-top: 40px
+	padding-bottom: 40px
+	font-weight: 400
+	font-family: 'HelveticaLight'
+.footer__logo
+	@extend .header__logo
+.footer__nav_wrap
+	display: flex
+	justify-content: space-around
+	border-left: 1px solid #1c3669
+	border-right: 1px solid #1c3669
+
+.footer__nav__link
+	text-transform: uppercase
+	color: #fff
+	font-size: 14px
+	font-weight: 400
+	line-height: 30px
+	&:hover
+		color: $active
+.footer__contacts
+	border-right: 1px solid #1c3669
+.footer__phone
+	font-size: 18px
+	margin-bottom: -6px
+	background-image: url(../img/phone-call------.png)
+	background-repeat: no-repeat
+	background-position: 10% 90%
+	padding-left: 78px
+	span
+		font-size: 23px
+		font-weight: 700
+.footer__adress
+	font-size: 13px
+	padding-left: 78px
+
+.footer__hours
+	font-size: 13px
+	line-height: 20px
+	margin-top: 22px
+	background-image: url(../img/clock.png)
+	background-repeat: no-repeat
+	background-position: 10% 40%
+	padding-left: 78px
+
+.footer__copy
+	font-size: 11px
 
 @import "media" // Всегда в конце
