@@ -212,7 +212,7 @@ img
 .popular__tabs__nav
 	display: flex
 
-	&__link
+	&__item
 		display: block
 		padding: 15px 40px 12px 33px
 		background-color: #f1f1f1
@@ -222,18 +222,25 @@ img
 			color: #fff
 		
 .popular__tabs__nav__item:nth-child(2)
-	.popular__tabs__nav__link
 		transform: skew(15deg)
 		margin-left: -8px
-
+.popular__tabs__nav__link_active
+	background-color: $active
+	color: #fff
 .popular__tabs__carousel
 	padding: 50px 100px
 	border: 1px solid #eeeeee
 	border-top: 2px solid $active
-	display: flex
-	justify-content: space-between
+	/* display: flex */
+	width: 100%
+	overflow: hidden
+	position: relative
 	&__item
-		width: 18%
+		width: 70%
+		float: left
+		margin: 0 10px
+		&__img
+			margin: 0 auto
 		&__name
 			font-size: 13px
 			font-weight: 700
@@ -248,6 +255,27 @@ img
 			padding: 13px 40px
 			font-size: 14px
 			font-weight: 700
+.popular__tabs__carousel_wrap
+	overflow: hidden
+.tab-content
+	display: none
+.current
+	display: block
+.popular__tabs__carousel_arrow
+	background-image: url(../img/arrow.png)
+	background-repeat: no-repeat
+	background-size: cover
+	width: 50px
+	height: 80px
+	position: absolute
+	border: 0
+	top: 36%
+	cursor: pointer
+	&_left
+		left: 3%
+	&_right
+		left: 92%
+		transform: rotate(180deg)
 .popular__btn
 	text-align: center
 	margin: 0 auto
